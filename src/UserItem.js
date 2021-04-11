@@ -12,7 +12,7 @@ export default class UserItem extends React.Component {
                         <span className="username">@{this.props.user.username}</span>
                         <a href={this.props.user.username}>{this.props.user.website}</a>
                         <span>
-                            <Link to="/users/1">
+                            <Link to={"/users/"+this.props.user.id}>
                                 <button type="button"
                                         className="btn btn-primary mt-2">MORE DETAILS
                                 </button>

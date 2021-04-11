@@ -36,3 +36,7 @@ span {
 a {
     font-size: 14px;
 }
+
+tr, th{
+    text-align: left;
+}
