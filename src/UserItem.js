@@ -10,7 +10,7 @@ export default class UserItem extends React.Component {
                         <img src="user_profile.png" className="profile_pic" alt="Cinque Terre"/>
                         <span className="title">{this.props.user.name}</span>
                         <span className="username">@{this.props.user.username}</span>
-                        <a href={this.props.user.username}>{this.props.user.website}</a>
+                        <a href={this.props.user.website}  target="_blank">{this.props.user.website}</a>
                         <span>
                             <Link to={"/users/"+this.props.user.id}>
                                 <button type="button"
